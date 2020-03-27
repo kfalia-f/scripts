@@ -7,7 +7,7 @@ do
 		if [ -f $file ]
 		then
 			l=$(awk '/\/\*\ \ \ \ \ /' $file | wc -l)
-			if [ $l -gt 3 ]
+			if [ $l -eq 5 ]
 			then
 				echo $file
 				sed -i '1,12d' $file

@@ -16,7 +16,7 @@ do
 	if [ -f $file ]
 	then
 		l=$(awk '/\/\*\ \ \ \ \ /' $file | wc -l)
-		if [ $l -gt 3 ]
+		if [ $l -eq 5 ]
 		then
 			tmp=$(sed -n '8p' $file)
 			dt1=${tmp:14:10}
