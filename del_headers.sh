@@ -1,7 +1,5 @@
 #! /bin/bash
 
-#sed -i '1,12d' file
-
 for dir in $@
 do
 	for file in $dir/*
